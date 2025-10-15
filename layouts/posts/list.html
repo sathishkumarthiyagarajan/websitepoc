@@ -1,0 +1,48 @@
+{{ define "main" }}
+
+<main>
+  <div class="section-area">
+    <div class="container-default">
+      <h1 class="text-align-center text-color-default">
+        <span>RETURN ON RENT BLOG</span>
+      </h1>
+    </div>
+  </div>
+  <div class="section-area bg-light">
+    <div class="container-default">
+      <div class="w-dyn-list">
+        <div role="list" class="collection-list w-dyn-items">
+          {{ range .Pages }}
+          <div role="listitem" class="w-dyn-item">
+            <a
+              data-w-id="522a8c63-1cab-4cdc-5bde-3e3f1da4e142"
+              href="{{strings.TrimRight "/" .Permalink}}"
+              class="w-inline-block"
+              ><div class="blog-preview-wrap">
+                <img
+                  alt=""
+                  loading="eager"
+                  src="{{ .Params.Thumbnail }}"
+                  sizes="100vw"
+                  srcset="
+                  {{ .Params.Thumbnail }}
+                  "
+                  class="blog-preview"
+                  style="
+                    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                    transform-style: preserve-3d;
+                  "
+                />
+              </div>
+              <div class="blog-list-title">{{ .Title }}</div></a
+            >
+          </div>
+          {{end}}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{{ end }}

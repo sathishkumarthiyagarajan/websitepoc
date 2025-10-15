@@ -1,0 +1,311 @@
+{{ define "main" }}
+
+<main>
+  <section class="section-area">
+    <div class="container-default">
+      <div class="blog-header-wrapper">
+        <a href="/posts" class="blog-back-link w-inline-block"
+          ><div class="back-icon w-embed">
+            <svg
+              width="14"
+              height="12"
+              viewBox="0 0 14 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_8357_54483)">
+                <path
+                  d="M14 6H2M2 6L7 1M2 6L7 11"
+                  stroke="white"
+                  stroke-width="1.5"
+                ></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_8357_54483">
+                  <rect
+                    width="14"
+                    height="12"
+                    fill="white"
+                    transform="matrix(-1 0 0 1 14 0)"
+                  ></rect>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div>Back to blog</div></a
+        >
+        <div class="blog-container">
+          <div id="w-node-_00dc63b3-05ff-be37-9785-e9c79e2c4082-75ccecc5">
+            <div class="blog-subtitle">{{ .Params.Category }}</div>
+            <h2 class="blog-header">{{ .Title }}</h2>
+            <div class="blog-post-subtitle">June 3, 2025</div>
+            <div class="blog-author-wrap">
+              <img
+                alt=""
+                loading="lazy"
+                src="https://cdn.prod.website-files.com/6577bd83b48ce2fa6d3007dc/657988c55d3b111f318971c2_rowland%201.png"
+                class="blog-author-profile"
+              />
+              <div class="blog-author-detail-wrap">
+                <div>Rowland Hobbs</div>
+                <div>CEO, Co-founder</div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="{{ .Params.Thumbnail }}"
+            loading="lazy"
+            style="
+              background-image: url('https://cdn.prod.website-files.com/6577bd83b48ce2fa6d3007dc/68413633712d9ecb237d2056_Frame%2016162%20(2).png');
+            "
+            id="w-node-_3e1f7b5f-bb73-a3c8-4756-a3584686976f-75ccecc5"
+            alt=""
+            sizes="100vw"
+            srcset="{{ .Params.Thumbnail }}"
+            class="blog-preview-image"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-area bg-light">
+    <div class="container-default">
+      <div class="blog-content-wrapper">
+        <aside
+          id="w-node-_7fe99fb3-f86d-8e0c-8dac-21a1e6e43809-75ccecc5"
+          class="aside"
+        >
+          <div id="tocwrapper">
+            <div class="toc-header">In this article<br /></div>
+            <ul id="toc" role="list" class="toc-content w-list-unstyled">
+              <li>
+                <a class="toc-list-item" href="#section0"
+                  >🚀 What the Data Shows</a
+                >
+              </li>
+              <li>
+                <a class="toc-list-item" href="#section1"
+                  >🔍 Property-Level Performance</a
+                >
+              </li>
+              <li>
+                <a class="toc-list-item" href="#section2">💡 Why It Matters</a>
+              </li>
+              <li>
+                <a class="toc-list-item" href="#section3">✅ Bottom Line</a>
+              </li>
+            </ul>
+          </div>
+          <div class="blog-post-share-wrap">
+            <div class="blog-share-text">Share</div>
+            <div class="w-layout-grid footer-social-list">
+              <a
+                data-share-facebook="true"
+                href="https://www.facebook.com/sharer/sharer.php?u=https://www.stakerent.com/blog/case-study-activated-properties-outpeform%2F&amp;title=Stake%3F"
+                class="footer-social-link w-inline-block"
+                target="_blank"
+                ><div class="icon-embed-xsmall w-embed">
+                  <svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22 12.0611C22 6.50451 17.5229 2 12 2C6.47715 2 2 6.50451 2 12.0611C2 17.0828 5.65684 21.2452 10.4375 22V14.9694H7.89844V12.0611H10.4375V9.84452C10.4375 7.32296 11.9305 5.93012 14.2146 5.93012C15.3088 5.93012 16.4531 6.12663 16.4531 6.12663V8.60261H15.1922C13.95 8.60261 13.5625 9.37822 13.5625 10.1739V12.0611H16.3359L15.8926 14.9694H13.5625V22C18.3432 21.2452 22 17.083 22 12.0611Z"
+                      fill="CurrentColor"
+                    ></path>
+                  </svg></div></a
+              ><a
+                data-share-twitter="true"
+                href="https://twitter.com/intent/tweet?url=https://www.stakerent.com/blog/case-study-activated-properties-outpeform"
+                class="footer_social-link w-inline-block"
+                target="_blank"
+                ><div class="icon-embed-xsmall w-embed">
+                  <svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.1761 4H19.9362L13.9061 10.7774L21 20H15.4456L11.0951 14.4066L6.11723 20H3.35544L9.80517 12.7508L3 4H8.69545L12.6279 9.11262L17.1761 4ZM16.2073 18.3754H17.7368L7.86441 5.53928H6.2232L16.2073 18.3754Z"
+                      fill="CurrentColor"
+                    ></path>
+                  </svg></div></a
+              ><a
+                data-share-linkedin="true"
+                href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.stakerent.com/blog/case-study-activated-properties-outpeform%2F&amp;title=Stake&amp;summary="
+                class="footer_social-link w-inline-block"
+                target="_blank"
+                ><div class="icon-embed-xsmall w-embed">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg></div
+              ></a>
+            </div>
+          </div>
+        </aside>
+        <div id="w-node-d0a020f8-80eb-f5b5-1e5b-fe81207997e9-75ccecc5">
+          <div id="blogContent" class="rich-text w-richtext">
+            {{ .Content }}
+          </div>
+          <div class="blog-post-share-footer-wrap">
+            <div class="blog-share-text">Share</div>
+            <div class="w-layout-grid footer-social-list">
+              <a
+                data-share-facebook="true"
+                href="https://www.facebook.com/sharer/sharer.php?u=https://www.stakerent.com/blog/case-study-activated-properties-outpeform%2F&amp;title=Stake%3F"
+                class="footer-social-link w-inline-block"
+                target="_blank"
+                ><div class="icon-embed-xsmall w-embed">
+                  <svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22 12.0611C22 6.50451 17.5229 2 12 2C6.47715 2 2 6.50451 2 12.0611C2 17.0828 5.65684 21.2452 10.4375 22V14.9694H7.89844V12.0611H10.4375V9.84452C10.4375 7.32296 11.9305 5.93012 14.2146 5.93012C15.3088 5.93012 16.4531 6.12663 16.4531 6.12663V8.60261H15.1922C13.95 8.60261 13.5625 9.37822 13.5625 10.1739V12.0611H16.3359L15.8926 14.9694H13.5625V22C18.3432 21.2452 22 17.083 22 12.0611Z"
+                      fill="CurrentColor"
+                    ></path>
+                  </svg></div></a
+              ><a
+                data-share-twitter="true"
+                href="https://twitter.com/intent/tweet?url=https://www.stakerent.com/blog/case-study-activated-properties-outpeform"
+                class="footer_social-link w-inline-block"
+                target="_blank"
+                ><div class="icon-embed-xsmall w-embed">
+                  <svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.1761 4H19.9362L13.9061 10.7774L21 20H15.4456L11.0951 14.4066L6.11723 20H3.35544L9.80517 12.7508L3 4H8.69545L12.6279 9.11262L17.1761 4ZM16.2073 18.3754H17.7368L7.86441 5.53928H6.2232L16.2073 18.3754Z"
+                      fill="CurrentColor"
+                    ></path>
+                  </svg></div></a
+              ><a
+                data-share-linkedin="true"
+                href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.stakerent.com/blog/case-study-activated-properties-outpeform%2F&amp;title=Stake&amp;summary="
+                class="footer_social-link w-inline-block"
+                target="_blank"
+                ><div class="icon-embed-xsmall w-embed">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg></div
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-area bg-light-secondary">
+    <div class="container-default">
+      <h2 class="text-align-center">Further reading</h2>
+      <div class="blog-collection-list-wrapper w-dyn-list">
+        <div role="list" class="collection-list w-dyn-items">
+          <div role="listitem" class="w-dyn-item">
+            <a
+              data-w-id="12a92d68-bdf4-c2a8-f2b4-eb8671ea5f60"
+              href="/blog/transforming-the-rental-economy"
+              class="_w-full w-inline-block"
+              ><div class="blog-preview-wrap">
+                <img
+                  alt=""
+                  loading="lazy"
+                  src="https://cdn.prod.website-files.com/6577bd83b48ce2fa6d3007dc/66e85f6e2b5ed7af96617a21_transforming-the-rental-economy.png"
+                  sizes="100vw"
+                  srcset="
+                    https://cdn.prod.website-files.com/6577bd83b48ce2fa6d3007dc/66e85f6e2b5ed7af96617a21_transforming-the-rental-economy-p-500.png   500w,
+                    https://cdn.prod.website-files.com/6577bd83b48ce2fa6d3007dc/66e85f6e2b5ed7af96617a21_transforming-the-rental-economy-p-800.png   800w,
+                    https://cdn.prod.website-files.com/6577bd83b48ce2fa6d3007dc/66e85f6e2b5ed7af96617a21_transforming-the-rental-economy-p-1080.png 1080w,
+                    https://cdn.prod.website-files.com/6577bd83b48ce2fa6d3007dc/66e85f6e2b5ed7af96617a21_transforming-the-rental-economy.png        1389w
+                  "
+                  class="blog-preview"
+                />
+              </div>
+              <div class="blog-more-title">Transforming The Rental Economy</div>
+              <div class="blog-more-date">September 16, 2024</div></a
+            >
+          </div>
+          <div role="listitem" class="w-dyn-item">
+            <a
+              data-w-id="12a92d68-bdf4-c2a8-f2b4-eb8671ea5f60"
+              href="/blog/5-questions-with-denise-cusick"
+              class="_w-full w-inline-block"
+              ><div class="blog-preview-wrap">
+                <img
+                  alt=""
+                  loading="lazy"
+                  src="https://cdn.prod.website-files.com/6577bd83b48ce2fa6d3007dc/66a80e086f372a6346c37a01_welcome-denise.png"
+                  sizes="100vw"
+                  srcset="
+                    https://cdn.prod.website-files.com/6577bd83b48ce2fa6d3007dc/66a80e086f372a6346c37a01_welcome-denise-p-500.png 500w,
+                    https://cdn.prod.website-files.com/6577bd83b48ce2fa6d3007dc/66a80e086f372a6346c37a01_welcome-denise-p-800.png 800w,
+                    https://cdn.prod.website-files.com/6577bd83b48ce2fa6d3007dc/66a80e086f372a6346c37a01_welcome-denise.png       815w
+                  "
+                  class="blog-preview"
+                />
+              </div>
+              <div class="blog-more-title">5 Questions for Denise Cusick</div>
+              <div class="blog-more-date">July 29, 2024</div></a
+            >
+          </div>
+          <div role="listitem" class="w-dyn-item">
+            <a
+              data-w-id="12a92d68-bdf4-c2a8-f2b4-eb8671ea5f60"
+              href="/blog/why-stake-acquired-circa-two-learnings-from-a-powerful-partnership"
+              class="_w-full w-inline-block"
+              ><div class="blog-preview-wrap">
+                <img
+                  alt=""
+                  loading="lazy"
+                  src="https://cdn.prod.website-files.com/6577bd83b48ce2fa6d3007dc/666a8b572ac18d3f28775c2b_circa-thumb.png"
+                  sizes="100vw"
+                  srcset="
+                    https://cdn.prod.website-files.com/6577bd83b48ce2fa6d3007dc/666a8b572ac18d3f28775c2b_circa-thumb-p-500.png 500w,
+                    https://cdn.prod.website-files.com/6577bd83b48ce2fa6d3007dc/666a8b572ac18d3f28775c2b_circa-thumb.png       668w
+                  "
+                  class="blog-preview"
+                />
+              </div>
+              <div class="blog-more-title">
+                Why Stake acquired Circa; two learnings from a powerful
+                partnership
+              </div>
+              <div class="blog-more-date">June 12, 2024</div></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+{{ end }}

@@ -1,0 +1,313 @@
+<div class="styles__global-embed-code w-embed w-script">
+  <style>
+    /* Hide overflow on page without effecting sticky */
+    .page-wrapper {
+      overflow: clip;
+    }
+    /* Text link underline size and spacing */
+    a {
+      text-underline-position: under;
+      text-decoration-thickness: 0.1em;
+      text-underline-offset: 0.05em;
+    }
+    /* Remove top margin on rich text first child */
+    .w-richtext > :first-child {
+      margin-top: 0;
+    }
+    /* Remove bottom margin of rich text last child */
+    .w-richtext > :last-child,
+    .w-richtext ol li:last-child,
+    .w-richtext ul li:last-child {
+      margin-bottom: 0;
+    }
+
+    @keyframes scroll {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(
+          calc(-100% - 1rem)
+        ); /* match 1 rem to gap above */
+      }
+    }
+
+    .scroll {
+      animation: scroll 200s linear infinite;
+    }
+
+    @keyframes scrolly {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(
+          calc(-100% - 0rem)
+        ); /* match 1 rem to gap above */
+      }
+    }
+
+    .scrolly {
+      animation: scrolly 25s linear infinite;
+    }
+
+    .section_analytics-dash body {
+      font-size: 1vw;
+    }
+    /* Max Font Size */
+    @media screen and (min-width: 1920px) {
+      .section_analytics-dash body {
+        font-size: 16px;
+      }
+    }
+    /* Container Max Width */
+    .container {
+      max-width: 1420px;
+    }
+
+    .navbar_link.w--current {
+      color: #54ff99;
+    }
+
+    .w-nav-overlay {
+      background-color: rgba(19, 24, 36, 1);
+      height: 100vh !important;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    .text-h1 {
+      font-size: 2.25rem;
+      font-weight: 500;
+    }
+
+    @media (min-width: 48rem) {
+      .text-h1 {
+        font-size: calc(-1.5rem + 7.8125vw);
+      }
+    }
+
+    @media (min-width: 64rem) {
+      .text-h1 {
+        font-size: 3.5rem;
+      }
+    }
+
+    .text-h2 {
+      font-size: 1.75rem;
+      font-weight: 500;
+    }
+
+    @media (min-width: 48rem) {
+      .text-h2 {
+        font-size: calc(-2.75rem + 9.375vw);
+      }
+    }
+
+    @media (min-width: 64rem) {
+      .text-h2 {
+        font-size: 3.25rem;
+      }
+    }
+
+    .text-h3 {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    @media (min-width: 48rem) {
+      .text-h3 {
+        font-size: calc(-2.25rem + 7.8125vw);
+      }
+    }
+
+    @media (min-width: 64rem) {
+      .text-h3 {
+        font-size: 2.75rem;
+      }
+    }
+
+    .text-h4 {
+      font-size: 1.5rem;
+    }
+
+    @media (min-width: 48rem) {
+      .text-h4 {
+        font-size: calc(-0.75rem + 4.6875vw);
+      }
+    }
+
+    @media (min-width: 64rem) {
+      .text-h4 {
+        font-size: 2.25rem;
+      }
+    }
+
+    .text-h5 {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    @media (min-width: 48rem) {
+      .text-h5 {
+        font-size: calc(0.75rem + 1.5625vw);
+      }
+    }
+
+    @media (min-width: 64rem) {
+      .text-h5 {
+        font-size: 1.75rem;
+      }
+    }
+
+    .text-h6 {
+      font-size: 1.25rem;
+    }
+
+    @media (min-width: 48rem) {
+      .text-h6 {
+        font-size: calc(0.5rem + 1.5625vw);
+      }
+    }
+
+    @media (min-width: 64rem) {
+      .text-h6 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const currentYear = new Date().getFullYear();
+      const element = document.getElementById("copyrightYear");
+      if (element) {
+        element.textContent = currentYear;
+      }
+    });
+  </script>
+</div>
+<div
+  data-animation="default"
+  class="navbar w-nav"
+  data-easing2="ease"
+  data-easing="ease"
+  data-collapse="medium"
+  role="banner"
+  data-no-scroll="1"
+  data-duration="500"
+  data-doc-height="1"
+>
+  <div class="nav-menu-overlay"></div>
+  <div class="navbar-container">
+    <a href="/" aria-current="page" class="brand w-nav-brand w--current"
+      ><img
+        loading="lazy"
+        src="https://cdn.prod.website-files.com/65742a077fab5803af582aee/675a9cfcbed036416515cd5a_stake_logo.svg"
+        alt=""
+        class="logo-image"
+    /></a>
+    <div class="w-layout-hflex action-wrapper">
+      <a href="#" class="navbar-login-btn responsive w-button">Log In</a>
+      <div
+        data-w-id="13417605-b55f-7073-d7bf-4624a16e9b14"
+        class="navmenu-button w-nav-button"
+      >
+        <div
+          data-is-ix2-target="1"
+          class="navmenu-button-icon"
+          data-w-id="13417605-b55f-7073-d7bf-4624a16e9b15"
+          data-animation-type="lottie"
+          data-src="https://cdn.prod.website-files.com/65742a077fab5803af582aee/675bfdb124d5251b9119a249_hamburger-button-icon-animation.json"
+          data-loop="0"
+          data-direction="1"
+          data-autoplay="0"
+          data-renderer="svg"
+          data-default-duration="0"
+          data-duration="1.5"
+        ></div>
+      </div>
+    </div>
+    <nav role="navigation" class="navmenu-flex-container w-nav-menu">
+      <div class="w-layout-hflex navbar-left">
+        <a href="/" aria-current="page" class="menu-item w-nav-link w--current"
+          >The Rental Experience</a
+        ><a href="#" class="menu-item w-nav-link">The Data</a>
+        <div
+          data-delay="200"
+          data-hover="false"
+          data-w-id="ac1bbb8d-81f0-e3c9-cfa2-c3e68356f1d4"
+          class="navbar-dropdown w-dropdown"
+        >
+          <div class="menu-item header-menu-dropdown w-dropdown-toggle">
+            <div>Products</div>
+            <div class="navbar-dropdown-icon w-icon-dropdown-toggle"></div>
+          </div>
+          <nav class="dropdown-content w-dropdown-list">
+            <div class="dropdown-subgrid">
+              <div class="dropdown-subgrid-group">
+                <h4 class="dropdown-menu-title">Products</h4>
+                <a
+                  href="/stakepay"
+                  id="w-node-ac1bbb8d-81f0-e3c9-cfa2-c3e68356f1de-a16e9b0d"
+                  class="dropdown-menu-link"
+                  >StakePay</a
+                ><a href="#" class="dropdown-menu-link">Credit Builder</a
+                ><a href="#" class="dropdown-menu-link">StakeSay</a
+                ><a href="#" class="dropdown-menu-link">ESG Dashboard</a
+                ><a href="#" class="dropdown-menu-link">Get Current</a>
+              </div>
+              <div
+                id="w-node-ac1bbb8d-81f0-e3c9-cfa2-c3e68356f1ea-a16e9b0d"
+                class="dropdown-subgrid-group"
+              >
+                <h4 class="dropdown-menu-title">Platform</h4>
+                <a
+                  href="/loyalty-cloud"
+                  id="w-node-ac1bbb8d-81f0-e3c9-cfa2-c3e68356f1ed-a16e9b0d"
+                  class="dropdown-menu-link"
+                  >Loyalty Cloud for Properties</a
+                ><a
+                  href="/return-on-rent"
+                  id="w-node-ac1bbb8d-81f0-e3c9-cfa2-c3e68356f1f1-a16e9b0d"
+                  class="dropdown-menu-link"
+                  >Return On Rent™ funds for investors</a
+                >
+              </div>
+              <div
+                id="w-node-ac1bbb8d-81f0-e3c9-cfa2-c3e68356f1f3-a16e9b0d"
+                class="dropdown-subgrid-group announcement-section"
+              >
+                <div
+                  data-w-id="f254e981-e30c-5fa1-568f-d23844c8efea"
+                  class="product-anouncement-container"
+                >
+                  <h4 class="dropdown-menu-title">Product announcements</h4>
+                </div>
+                <a
+                  data-w-id="b31ab984-6965-103e-e3ad-910f8f8f8380"
+                  href="/fall-release"
+                  class="dropdown-menu-link w-inline-block"
+                  ><div class="product-announcemnet-img-wrapper">
+                    <img
+                      src="https://cdn.prod.website-files.com/65742a077fab5803af582aee/677d7038c46fc97592762162_Fall%20Release%20Thumbnail.png"
+                      loading="lazy"
+                      alt=""
+                      class="product-announcement-img"
+                    />
+                  </div>
+                  <div><div>Fall Release</div></div></a
+                >
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="w-layout-hflex navbar-right">
+        <a href="/posts" class="menu-item w-nav-link">Blog</a
+        ><a href="#" class="menu-item w-nav-link">About</a
+        ><a href="#" class="navbar-login-btn w-button">Log In</a>
+      </div>
+    </nav>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  /* Add padding to prevent content from hiding under fixed header/footer */
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: lightblue;
+  z-index: 1000;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: lightgreen;
+  z-index: 1000;
+}
+
+main {
+  background-color: #f0f0f0;
+  padding: 20px;
+  /* min-height will correctly work here because the body now has a calculated height */
+  min-height: calc(100vh - 110px); /* 100vh - (header height + footer height) */
+}
